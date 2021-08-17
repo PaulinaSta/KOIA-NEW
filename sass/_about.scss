@@ -29,7 +29,7 @@
     }
 
     @media screen and (orientation: landscape) {
-        @include flex(row, space-between);
+        @include flex(row, flex-start);
     }
 
     @media screen and (orientation: landscape) and (min-width: 1024px) {
@@ -70,6 +70,10 @@
             height: 200px;
             width: 200px;
         }
+    }
+
+    &__text-wrapper {
+        flex: 1;
     }
 
     &__subtitle {

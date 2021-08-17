@@ -199,10 +199,17 @@ a {
 
 .button__link {
   background-color: #efefef;
+  border-radius: 45px;
   padding: 0 20px;
   line-height: 30px;
   text-decoration: none;
   display: inline-block;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.button__link:hover {
+  background-color: #fff;
 }
 
 @media screen and (orientation: portrait) and (min-width: 768px) {
@@ -237,13 +244,22 @@ a {
 
 .button__link--banner {
   background-color: #ffffff80;
-  -webkit-box-shadow: 0 0 20px 0 #333333;
-          box-shadow: 0 0 20px 0 #333333;
+  -webkit-box-shadow: 0 0 20px #333333;
+          box-shadow: 0 0 20px #333333;
+}
+
+.button__link--offer:hover {
+  background-color: #c6a4a466;
 }
 
 .button__link--news {
   background-color: transparent;
   padding: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.button__link--news:hover {
   color: #c6a4a4;
 }
 
@@ -263,6 +279,7 @@ a {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  text-shadow: 0 2px 10px #33333366;
 }
 
 @media screen and (orientation: portrait) and (min-width: 768px) {
@@ -299,13 +316,18 @@ a {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #efefef;
+  background-color: #c6a4a466;
   text-align: center;
   border-radius: 50%;
   -webkit-transform: translateY(70px);
           transform: translateY(70px);
   -webkit-transition: .3s;
   transition: .3s;
+  cursor: pointer;
+}
+
+.to-top-btn:hover {
+  background-color: #c6a4a4;
 }
 
 @media screen and (orientation: portrait) and (min-width: 768px) {
@@ -466,6 +488,8 @@ a {
   font-size: 24px;
   cursor: pointer;
   display: none;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 @media screen and (orientation: portrait) and (min-width: 768px) {
@@ -478,6 +502,10 @@ a {
   .menu__burger-icon {
     font-size: 32px;
   }
+}
+
+.menu__burger-icon:hover {
+  color: #c6a4a4;
 }
 
 .menu__burger-icon--show {
@@ -607,6 +635,9 @@ a {
 .menu__link {
   text-decoration: none;
   padding: 5px 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 30px;
 }
 
 @media screen and (orientation: portrait) and (min-width: 768px) {
@@ -631,6 +662,10 @@ a {
   .menu__link {
     font-size: 20px;
   }
+}
+
+.menu__link:hover {
+  background-color: #c6a4a466;
 }
 
 .menu__link--focused {
@@ -686,7 +721,7 @@ a {
 }
 
 .banner__slide--1 {
-  background-image: url(../img/banner1.jpg);
+  background-image: url(../img/new2.jpg);
 }
 
 .banner__slide--2 {
@@ -696,6 +731,7 @@ a {
 .banner__title {
   padding: 0 40px;
   color: #fff;
+  text-shadow: 0 2px 10px #333333;
 }
 
 @media screen and (orientation: portrait) and (min-width: 768px) {
@@ -798,9 +834,9 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -859,6 +895,12 @@ a {
     height: 200px;
     width: 200px;
   }
+}
+
+.feature__text-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .feature__subtitle {
@@ -1204,7 +1246,6 @@ a {
 @media screen and (orientation: landscape) and (min-width: 1024px) {
   .treatments__wrapper {
     bottom: -160px;
-    padding: 40px;
   }
 }
 
@@ -1362,7 +1403,6 @@ a {
 @media screen and (orientation: landscape) and (min-width: 1024px) {
   .products__wrapper {
     bottom: -230px;
-    padding: 40px;
   }
 }
 
@@ -1522,6 +1562,13 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.article:hover {
+  -webkit-box-shadow: 0 0 20px 0 #333333;
+          box-shadow: 0 0 20px 0 #333333;
 }
 
 .article--2 {
@@ -1872,6 +1919,15 @@ select:-webkit-autofill:focus {
   }
 }
 
+.contact__link {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contact__link:hover {
+  color: #c6a4a4;
+}
+
 @media screen and (orientation: portrait) and (min-width: 768px) {
   .contact__link {
     font-size: 18px;
@@ -2048,6 +2104,13 @@ select:-webkit-autofill:focus {
   height: 40px;
   text-align: center;
   border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer__social-media-item:hover .footer__social-media-icon {
+  color: #fff;
 }
 
 @media screen and (orientation: portrait) and (min-width: 768px) {
@@ -2078,6 +2141,14 @@ select:-webkit-autofill:focus {
     width: 80px;
     height: 80px;
   }
+}
+
+.footer__social-media-item--ig:hover {
+  background-color: #e1306c;
+}
+
+.footer__social-media-item--fb:hover {
+  background-color: #4267B2;
 }
 
 .footer__social-media-icon {

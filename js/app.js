@@ -2,7 +2,7 @@ new Glide('.banner__glide', {
     type: 'carousel',
     startAt: 0,
     gap: 0,
-    // autoplay: 4000,
+    autoplay: 4000,
     animationDuration: 800,
 }).mount();
 

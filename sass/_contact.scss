@@ -83,6 +83,12 @@
     }
 
     &__link {
+        transition: .3s;
+
+        &:hover {
+            color: $logo-color;
+        }
+
         @media screen and (orientation: portrait) and (min-width: 768px) {
             font-size: 18px;
         }
