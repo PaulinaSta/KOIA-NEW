@@ -1,0 +1,73 @@
+.banner {
+    height: 100vh;
+    padding-top: 70px;
+
+    @media screen and (orientation: portrait) and (min-width: 768px) {
+        padding-top: 100px;
+    }
+
+    @media screen and (orientation: landscape) and (min-width: 1024px) {
+        padding-top: 100px;
+    }
+
+    &__glide {
+        height: 100%;
+    }
+
+    &__track {
+        height: 100%;
+    }
+
+    &__slides {
+        height: 100%;
+    }
+
+    &__slide {
+        @include flex(column, space-around);
+
+        background-position: center;
+        text-align: center;
+        background-size: cover;
+        position: relative;
+
+        &--1 {
+            background-image: url(../img/banner1.jpg);
+        }
+
+        &--2 {
+            background-image: url(../img/banner2.jpg);
+        }
+    }
+
+    &__title {
+        padding: 0 40px;
+        color: #fff;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            padding: 0 60px;
+            font-size: 42px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            padding: 0 80px;
+            font-size: 52px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            font-size: 42px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            font-size: 52px;
+        }
+
+    }
+
+    &__button {
+        &--1 {
+            @media screen and (orientation: landscape) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

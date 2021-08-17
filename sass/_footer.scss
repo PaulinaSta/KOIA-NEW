@@ -1,0 +1,167 @@
+.footer {
+    background-color: #fff;
+    padding: 40px 20px 20px 20px;
+
+    @media screen and (orientation: portrait) and (min-width: 768px) {
+        padding: 60px 80px 20px 80px;
+    }
+
+    &__logo-and-description {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $logo-color;
+
+        @media screen and (orientation: landscape) {
+            @include flex(row, center);
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            padding-bottom: 40px;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 30px;
+        justify-content: center;
+
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            margin-bottom: 40px;
+        }
+
+        @media screen and (orientation: landscape) {
+            margin-bottom: 0;
+            margin-right: 40px;
+        }
+    }
+
+    &__description {
+        // padding-bottom: 10px;
+
+        &--1 {
+            text-transform: uppercase;
+        }
+
+        &--2 {
+            margin-bottom: 10px;
+
+            @media screen and (orientation: portrait) and (min-width: 768px) {
+                margin-bottom: 20px;
+            }
+
+            @media screen and (orientation: landscape) and (min-width: 1024px) {
+                margin-bottom: 20px;
+            }
+
+            @media screen and (orientation: landscape) and (min-width: 1366px) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__social-media {
+        margin-bottom: 40px;
+    }
+
+    &__social-media-items {
+        @include flex(row, center);
+    }
+
+    &__social-media-item {
+        margin: 0 10px;
+        background-color: $background-color;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        border-radius: 50%;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            width: 60px;
+            height: 60px;
+            margin: 0 20px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            width: 80px;
+            height: 80px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            width: 60px;
+            height: 60px;
+            margin: 0 20px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    &__social-media-icon {
+        line-height: 40px;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            font-size: 20px;
+            line-height: 60px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            font-size: 26px;
+            line-height: 80px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            font-size: 20px;
+            line-height: 60px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            line-height: 80px;
+            font-size: 26px;
+        }
+    }
+
+    &__copyright {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 10px;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            font-size: 16px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            font-size: 18px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            font-size: 16px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            font-size: 18px;
+        }
+    }
+
+    &__design {
+        text-align: center;
+        font-size: 14px;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            font-size: 16px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            font-size: 18px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            font-size: 16px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            font-size: 18px;
+        }
+    }
+}

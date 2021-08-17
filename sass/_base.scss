@@ -1,0 +1,307 @@
+// font-family: 'Fuggles', cursive;
+// font-family: 'Noto Serif', serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Marck Script', cursive;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+a,
+button {
+    color: $font-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.break-line::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.logo {
+    @include flex (row, flex-start);
+
+    &__icon {
+        height: 50px;
+        margin-right: 20px;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            height: 70px;
+            margin-right: 30px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            height: 70px;
+            margin-right: 30px;
+        }
+
+        &--footer {
+            height: 100px;
+            margin-right: 0;
+
+            @media screen and (orientation: portrait) and (min-width: 768px) {
+                height: 140px;
+            }
+
+            @media screen and (orientation: portrait) and (min-width: 1024px) {
+                height: 200px;
+            }
+
+            @media screen and (orientation: landscape) and (min-width: 1024px) {
+                height: 140px;
+            }
+
+            @media screen and (orientation: landscape) and (min-width: 1366px) {
+                height: 200px;
+            }
+        }
+    }
+
+    &__name {
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            font-size: 20px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            font-size: 20px;
+        }
+    }
+}
+
+.title {
+    font-weight: normal;
+    text-align: center;
+
+    @media screen and (orientation: portrait) and (min-width: 768px) {
+        font-size: 32px;
+    }
+
+    @media screen and (orientation: portrait) and (min-width: 1024px) {
+        font-size: 40px;
+    }
+
+    @media screen and (orientation: landscape) and (min-width: 1024px) {
+        font-size: 32px;
+    }
+
+    @media screen and (orientation: landscape) and (min-width: 1366px) {
+        font-size: 40px;
+    }
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+
+    @media screen and (orientation: portrait) and (min-width: 768px) {
+        font-size: 24px;
+    }
+
+    @media screen and (orientation: portrait) and (min-width: 1024px) {
+        font-size: 28px;
+    }
+
+    @media screen and (orientation: landscape) and (min-width: 1024px) {
+        font-size: 24px;
+    }
+
+    @media screen and (orientation: landscape) and (min-width: 1366px) {
+        font-size: 28px;
+    }
+}
+
+.description {
+    text-align: center;
+
+    @media screen and (orientation: portrait) and (min-width: 768px) {
+        font-size: 18px;
+    }
+
+    @media screen and (orientation: portrait) and (min-width: 1024px) {
+        font-size: 20px;
+    }
+
+    @media screen and (orientation: landscape) and (min-width: 1024px) {
+        font-size: 18px;
+    }
+
+    @media screen and (orientation: landscape) and (min-width: 1366px) {
+        font-size: 20px;
+    }
+}
+
+.button {
+    border: none;
+    background-color: transparent;
+
+    &__link {
+        // background-color: $logo-color;
+        background-color: $background-color;
+        padding: 0 20px;
+        line-height: 30px;
+        text-decoration: none;
+        display: inline-block;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            line-height: 50px;
+            font-size: 16px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            padding: 0 30px;
+            line-height: 70px;
+            font-size: 20px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            line-height: 50px;
+            font-size: 16px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            line-height: 70px;
+            font-size: 20px;
+            padding: 0 30px;
+        }
+
+        &--banner {
+            background-color: #ffffff80;
+            box-shadow: 0 0 20px 0 $font-color;
+        }
+
+        &--news {
+            background-color: transparent;
+            padding: 0;
+            color: $logo-color;
+
+            @media screen and (orientation: landscape) and (min-width: 1024px) {
+                font-size: 18px;
+            }
+
+            @media screen and (orientation: landscape) and (min-width: 1366px) {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+.glide {
+    &__arrow {
+        border: none;
+        box-shadow: none;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            font-size: 26px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            font-size: 26px;
+        }
+    }
+
+    &__bullet {
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            width: 16px;
+            height: 16px;
+            margin: 0 8px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            width: 16px;
+            height: 16px;
+            margin: 0 8px;
+        }
+    }
+}
+
+
+.to-top-btn {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: $background-color;
+    text-align: center;
+    border-radius: 50%;
+    transform: translateY(70px);
+    transition: .3s;
+
+    @media screen and (orientation: portrait) and (min-width: 768px) {
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        transform: translateY(100px);
+    }
+
+    @media screen and (orientation: portrait) and (min-width: 1024px) {
+        width: 80px;
+        height: 80px;
+        bottom: 50px;
+        right: 50px;
+        transform: translateY(130px);
+    }
+
+    @media screen and (orientation: landscape) and (min-width: 1024px) {
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        transform: translateY(100px);
+    }
+
+    @media screen and (orientation: landscape) and (min-width: 1366px) {
+        width: 80px;
+        height: 80px;
+        bottom: 50px;
+        right: 50px;
+        transform: translateY(130px);
+    }
+
+    &--show {
+        transform: translateY(0);
+    }
+
+    &__icon {
+        line-height: 40px;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            line-height: 60px;
+            font-size: 20px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            line-height: 80px;
+            font-size: 26px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            line-height: 60px;
+            font-size: 20px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            line-height: 80px;
+            font-size: 26px;
+        }
+    }
+}

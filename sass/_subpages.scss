@@ -1,0 +1,24 @@
+.subpage {
+    background-color: $logo-color;
+    height: 100vh;
+    @include flex(column, center);
+
+    &__title {
+        color: #fff;
+        font-weight: normal;
+        font-family: 'Fuggles', cursive;
+        font-size: 50px;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            font-size: 80px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            font-size: 100px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            font-size: 80px;
+        }
+    }
+}

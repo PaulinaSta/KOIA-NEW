@@ -1,0 +1,92 @@
+.newsletter {
+    background-color: $opacity-font-color;
+    padding: 40px 20px 20px 20px;
+    color: #fff;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        margin-bottom: 20px;
+    }
+}
+
+.form {
+    padding: 10px;
+    border: 1px solid #fff;
+
+    &__elements {
+        list-style: none;
+        @include flex(column, center);
+    }
+
+    &__element {
+        width: 100%;
+        margin-bottom: 30px;
+        @include flex(row, center);
+    }
+
+    &__input {
+        background-color: #adadad;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            font-size: 16px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            font-size: 18px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            font-size: 16px;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__checkbox {
+        display: none;
+
+        &--customized {
+            display: block;
+        }
+    }
+
+    &__icon {
+        display: none;
+        margin-right: 10px;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__link {
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+}

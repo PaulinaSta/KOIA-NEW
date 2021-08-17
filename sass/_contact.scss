@@ -1,0 +1,130 @@
+.contact {
+    padding: 40px 0 0 0;
+    background-color: #fff;
+    @include flex(column, center);
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+
+    &__items-and-map {
+        @include flex(column, center);
+        width: 100%;
+
+        @media screen and (orientation: landscape) {
+            @include flex(row, space-between);
+            align-items: stretch;
+            width: 100%;
+        }
+    }
+
+    &__items {
+        padding: 20px;
+
+        @media screen and (orientation: landscape) {
+            padding: 40px 20px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 414px) {
+            padding: 60px 20px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            padding: 80px 20px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            padding: 120px 20px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 20px;
+        @include flex(row, flex-start);
+
+        @media screen and (orientation: landscape) and (min-width: 414px) {
+            margin-bottom: 40px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            margin-bottom: 60px;
+        }
+
+        &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+    }
+
+
+    &__icon {
+        margin-right: 20px;
+        width: 20px;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            font-size: 18px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            font-size: 20px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            font-size: 18px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            font-size: 20px;
+        }
+    }
+
+    &__link {
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            font-size: 18px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            font-size: 20px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            font-size: 18px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            font-size: 20px;
+        }
+    }
+
+    &__map-container {
+        height: 300px;
+        width: 100%;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            height: 500px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            height: 700px;
+        }
+
+        @media screen and (orientation: landscape) {
+            height: auto;
+            width: 50%;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 414px) {
+            flex: 1;
+        }
+    }
+
+    &__map {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+}

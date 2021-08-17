@@ -1,0 +1,110 @@
+.gallery {
+    padding: 40px 20px 20px 20px;
+    background-color: $background-color;
+    @include flex(column, center);
+
+    &__text-wrapper {
+        margin-bottom: 20px;
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            width: 800px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            width: 1000px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__glide {
+        @media screen and (orientation: landscape) and (min-width: 667px) {
+            width: 500px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            width: 800px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            width: 1000px;
+        }
+    }
+
+    &__slides {
+        margin-bottom: 20px;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__slide {
+        @include flex(row, center);
+        padding: 0 30px;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            padding: 0 40px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            padding: 0 40px;
+        }
+    }
+
+    &__link {
+        width: 100%;
+        height: 220px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            height: 480px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            height: 600px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            height: 480px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            height: 600px;
+        }
+
+        &--1 {
+            background-image: url(../img/banner1.jpg);
+        }
+
+        &--2 {
+            background-image: url(../img/banner2.jpg);
+        }
+
+        &--3 {
+            background-image: url(../img/feature3.jpg);
+        }
+    }
+
+    &__arrow {
+        &--left {
+            left: -10px;
+        }
+
+        &--right {
+            right: -10px;
+        }
+    }
+
+    &__dots {
+        bottom: 0;
+    }
+}

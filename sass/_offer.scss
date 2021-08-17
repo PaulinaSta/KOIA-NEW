@@ -1,0 +1,276 @@
+.offer {
+    background-color: #fff;
+    padding: 40px 20px 20px 20px;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__discount {
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    &__description {
+        margin-bottom: 20px;
+
+        @media screen and (orientation: landscape) {
+            margin-bottom: 0;
+            width: auto;
+        }
+    }
+
+    &__wrapper {
+        margin-top: 20px;
+        @include flex(column, center);
+
+        @media screen and (orientation: landscape) {
+            @include flex(row, space-between);
+        }
+    }
+
+    &__treatments {
+        width: 100%;
+        margin-bottom: 40px;
+
+        @media screen and (orientation: landscape) {
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+    }
+
+    &__products {
+        width: 100%;
+    }
+}
+
+.discount {
+    background-color: $opacity-logo-color;
+    padding: 20px;
+
+    &__subtitle {
+        margin-bottom: 10px;
+    }
+}
+
+.treatments {
+    overflow: hidden;
+
+    &:hover .treatments__wrapper {
+        box-shadow: 0 0 20px 0 $font-color;
+        bottom: 20px;
+    }
+
+    &__img {
+        background-image: url(../img/feature1.JPG);
+        background-size: cover;
+        background-position: center;
+        height: 250px;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            height: 300px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            height: 400px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            height: 300px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            height: 400px;
+        }
+    }
+
+    &__text {
+        position: relative;
+        height: 50px;
+        // background-color: red;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            height: 60px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            height: 70px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            height: 60px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            height: 70px;
+        }
+    }
+
+    &__wrapper {
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: -105px;
+        background-color: #fff;
+        padding: 20px;
+        transition: .5s;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            bottom: -90px;
+            padding: 40px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            bottom: -110px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            bottom: -160px;
+            padding: 40px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            bottom: -200px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        transition: .5s;
+    }
+
+    &__buttons {
+        @include flex(column, center);
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            @include flex(row, center);
+        }
+    }
+
+    &__button {
+
+        &--1 {
+            margin-bottom: 20px;
+
+            @media screen and (orientation: portrait) and (min-width: 768px) {
+                margin-bottom: 0;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.products {
+    overflow: hidden;
+
+    &:hover .products__wrapper {
+        box-shadow: 0 0 20px 0 $font-color;
+        bottom: 20px;
+    }
+
+    &__img {
+        background-image: url(../img/feature2.JPG);
+        background-size: cover;
+        background-position: center;
+        height: 250px;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            height: 300px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            height: 400px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            height: 300px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            height: 400px;
+        }
+    }
+
+    &__text {
+        position: relative;
+        height: 50px;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            height: 60px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            height: 70px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            height: 60px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            height: 70px;
+        }
+    }
+
+    &__wrapper {
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: -155px;
+        background-color: #fff;
+        padding: 20px;
+        transition: .5s;
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            bottom: -90px;
+            padding: 40px;
+        }
+
+        @media screen and (orientation: portrait) and (min-width: 1024px) {
+            bottom: -110px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            bottom: -230px;
+            padding: 40px;
+        }
+
+        @media screen and (orientation: landscape) and (min-width: 1366px) {
+            bottom: -290px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        transition: .5s;
+    }
+
+    &__buttons {
+        @include flex(column, center);
+
+        @media screen and (orientation: portrait) and (min-width: 768px) {
+            @include flex(row, center);
+        }
+    }
+
+    &__button {
+
+        &--1 {
+            margin-bottom: 20px;
+
+            @media screen and (orientation: portrait) and (min-width: 768px) {
+                margin-bottom: 0;
+                margin-right: 20px;
+            }
+        }
+
+        &--2 {
+            margin-bottom: 20px;
+
+            @media screen and (orientation: portrait) and (min-width: 768px) {
+                margin-bottom: 0;
+                margin-right: 20px;
+            }
+        }
+    }
+}

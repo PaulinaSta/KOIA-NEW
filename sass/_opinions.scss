@@ -1,0 +1,45 @@
+.opinions {
+    padding: 40px 20px 20px 20px;
+    background-color: $background-color;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__slides {
+        margin-bottom: 20px;
+    }
+
+    &__slide {
+        padding: 0 40px;
+    }
+
+    &__arrow {
+
+        &--left {
+            left: -10px;
+        }
+
+        &--right {
+            right: -10px;
+        }
+    }
+
+    &__dots {
+        bottom: 0;
+    }
+}
+
+.opinion {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    &__description {
+        margin-bottom: 20px;
+    }
+
+    &__customer {
+        font-style: italic;
+    }
+}
